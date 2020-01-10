@@ -1,4 +1,4 @@
-cconst ATJAUNOT = 500;
+const ATJAUNOT = 500;
 const VERSIJA = "0.4"
 
 /*
