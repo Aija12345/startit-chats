@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask('app')
@@ -8,6 +8,7 @@ app = Flask('app')
 def index_page():
   return "Sveiciensf no kkkkStfffff!"
 
+  return render_template('index.html')
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
