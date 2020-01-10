@@ -6,7 +6,7 @@ app = Flask('app')
 
 @app.route('/')
 def index_page():
-  return "Sveiciensf no kkkkStfffff!"
+ 
 
   return render_template('index.html')
 
