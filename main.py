@@ -6,9 +6,13 @@ app = Flask('app')
 
 @app.route('/')
 def index_page():
- 
-
   return render_template('index.html')
+
+@app.route('/help')
+def healt_check():
+  return "ok"
+
+  
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
