@@ -5,7 +5,7 @@ app = Flask('app')
 
 @app.route('/')
 def index_lapa():
-  return render_template('index.html')
+  return render_template('chats.html')
 
 
 @app.route('/health')
