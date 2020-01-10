@@ -1,4 +1,4 @@
-const ATJAUNOT = 50000;
+const ATJAUNOT = 500;
 
 
 /*
@@ -16,6 +16,8 @@ async function lasiChatu() {
     raadiChatuVienkarsi(datuObjekts);
     await new Promise(resolve => setTimeout(resolve, ATJAUNOT));
     await lasiChatu();
+  
+    
 }
 
 
@@ -37,6 +39,7 @@ Publicē tērzēšanas ziņas datus uz serveri
 */
 async function suutiZinju() {
     // Nolasa ievades lauka saturu
+
     let zinjasElements = document.getElementById("zinja");
     let zinja = zinjasElements.value;
     // izdzēš ievades lauku
@@ -50,8 +53,12 @@ async function suutiZinju() {
         body: JSON.stringify({ "chats": zinja })
     });
     const datuObjekts = await atbilde.json();
-
-    // parāda jauno chata saturu
+    
+    
+    // Metode Post - kā veikt pieprasījumu un kādā veidā sūtīsim
+    // parāda jauno chata saturu  
+    //kas ir fetch??  - vēršas pie chats 
+   
     raadiChatuVienkarsi(datuObjekts);
 }
 
