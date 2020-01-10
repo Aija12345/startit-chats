@@ -17,7 +17,7 @@
 
 1. Izveido Flask izmantoto mapju struktūru: `templates` un `static` mapes
 1. Izveido pamata template failu `index.html` template mapē
-1. Izveido js (un favicon) failus static mapē
+1. Izveido js (un favicon) failus static mapē (lai būtu ikoniņa pie adreses)
 1. Izmaina `main.py`, lai tas izmantotu index.html template / routei
 1. Pievieno jaunu importu - `render_template`
 1. Pievieno servera monitorēšanas routi `/health`, kas atbild ar "OK"
